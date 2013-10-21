@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<script type="text/javascript">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43038614-2', 'lanacion.com.ar');
+		  ga('send', 'pageview');
+
+		</script>
+		
+		<title>El laberinto político de los candidatos - lanacion.com</title>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <meta name="Title" content="El laberinto político de los candidatos" />
+	    <meta name="og:title" content="El laberinto político de los candidatos" />
+	    <meta name="description" content="Visualizá el camino que realizaron los candidatos a través de las últimas elecciones. En qué partido estuvieron y con quiénes." />
+	    <meta name="og:description" content="Visualizá el camino que realizaron los candidatos a través de las últimas elecciones. En qué partido estuvieron y con quiénes." />
+	    <meta name="og:image" content="http://interactivos.lanacion.com.ar/candidatos/img/screen.png" />
+	    <link rel="image_src" href="http://interactivos.lanacion.com.ar/candidatos/img/screen.png" />
+
+		<meta name="author" content="La Nación">
+		<meta name="keywords" content="TODO">
+		<meta name="description" content="TODO">
+	
+			<link rel="stylesheet" href="css/reset.css" type="text/css">
+			<link rel="stylesheet" href="css/font.css" type="text/css">
+			<link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css">
+			<link rel="stylesheet" href="css/select2.css" type="text/css">		
+			<link rel="stylesheet" href="css/shadowbox.css" type="text/css">		
+			<link rel="stylesheet" href="css/estilo.css" type="text/css">
+		<!--Etiquetas HTML5 para IE8 hacia abajo-->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!-- <script type="text/javascript">
+			// create elements HTML5 for IE
+			document.createElement("article");
+			document.createElement("section");
+			document.createElement("footer");
+			document.createElement("header");
+			document.createElement("hgroup");
+			document.createElement("nav");
+		</script>  -->
+		<!--[if lt IE 9]> 
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body style="">
+		<div id="iframe_header">
+			<iframe src="http://especiales.lanacion.com.ar/varios/elecciones-2013/header.html" width="100%" height="150" scrolling="no"></iframe>
+		</div>
+
+		<div class="contenedor">
+
+			<!--[if lt IE 9]> 
+			<h1>Su versión de Internet Explorer es muy antigua.</h1>
+			<h2>Le recomendamos actualizar su navegador de internet.</h2>
+			<p>
+				<a href="http://www.mozilla.org/es-AR/firefox/new/" target="_blank"><img src="http://mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06"/></a>	
+			</p>
+			<![endif]-->
+
+			<!-- ENCABEZADO -->
+			
+			<header>
+				<hgroup>
+					<h1>EL LABERINTO POLÍTICO DE LOS CANDIDATOS</h1>
+					<ul class="bajada">
+						<li>Seleccioná hasta cuatro políticos para visualizar el camino que realizaron a través de las últimas elecciones. En qué partido estuvieron y con quiénes.</li>
+						<li>Al pasar sobre cada círculo de las líneas del tiempo se amplía la información.</li>
+						<li>Sobre el nombre de cada partido, se accede a los datos de la conformación del mismo.</li>
+					</ul>
+				</hgroup>
+			</header>
+			
+			<!-- CONTENIDOS -->
+			<div class="contenidos">
+				
+				<!-- SLIDER -->
+				<div class="slider-container">
+					
+					<div class="candidatos" style="display: block;">
+						
+						<div class="slide" style="left: 0px;">
+
+							<!-- ser carga -->
+							
+						</div>
+						
+					</div>
+						
+				</div><!-- FIN SLIDER -->
+
+				<div id="slider-control" href="javascript:;">
+					<span id="slider-control-label">
+						<span class="slider-control-arrow"></span>
+						<span class="text-mostrar slider-control-text">MOSTRAR FOTOS</span>
+						<span class="text-ocultar slider-control-text">OCULTAR FOTOS</span>
+						<span class="slider-control-arrow"></span>
+					</span>
+				</div>
+
+				<!-- SELECTED -->
+				<div class="selection-container">
+					<h3>Buscá por nombre</h3>
+					<div class="select-container">
+						
+					</div>
+					<a id="limpiar" class="action-btn disabled" href="javascript:;">BORRAR</a>
+					<a id="ver-recorrido" class="action-btn disabled" href="javascript:;">VER RECORRIDO</a>
+				</div> <!-- FIN SELECTED -->
+
+				<!-- GRAPH -->
+				<div class="graph-container">
+							
+					<div class="reference-block">
+						<span class="reference-text">- Al pasar sobre cada círculo de las líneas del tiempo se amplía la información.</span>
+						<p class="reference-black">Partido político</p>
+						<p class="reference-white">Cercano al partido político</p>
+					</div>
+
+					<div id="timeline-candidatos">
+
+					</div>
+
+					<div class="reference-block">
+						<p class="reference-black">Partido político</p>
+						<p class="reference-white">Cercano al partido político</p>
+					</div>
+
+				</div><!-- FIN GRAPH -->
+		
+			</div><!-- FIN CONTENIDOS -->
+			
+			<div class="content-bottom">
+				<a id="creditos-btn" href="javascript:;">Créditos</a>
+				<a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0AuNh4LTzbqXMdHgwTGhWN1lVcGR3T0tReENDSUtiZWc#gid=0" id="descargar"> Descargar Datos</a>
+				<a target="_blank" href="https://github.com/lanacioncom/EL-LABERINTO-POL-TICO-DE-LOS-CANDIDATOS" id="codigo-fuente"> Ver código fuente</a>
+				<div class="share-links">
+					<a class="minishare-mail minishare" href="javascript:;"></a>
+					<a class="minishare-gp minishare" href="javascript:;"></a>
+					<a class="minishare-tw minishare" href="javascript:;"></a>
+					<a class="minishare-fb minishare" href="javascript:;"></a>
+					<p class="share-text">Compartí tu búsqueda</p>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="iframe_footer">
+			<iframe src="http://especiales.lanacion.com.ar/varios/elecciones-2013/footer.html" width="100%" height="150" scrolling="no"></iframe>
+		</div>
+
+		<div id="creditos-modal" style="display:none;">
+			<div id="creditos-text">
+				<p class="title">
+					Créditos
+				</p>
+				<p class="task">
+					Jefa de proyecto
+				</p>
+				<p class="person">
+					Florencia Fernández Blanco
+				</p>
+				<p class="task">
+					Programación
+				</p>
+				<p class="person">
+					Pablo H. Paladino
+				</p> 
+				<p class="task">
+					Diseño interactivo
+				</p>
+				<p class="person">
+					Mariana Trigo Viera y Gastón De la Llana
+				</p> 
+				<p class="task">
+					Jefe de diseño interactivo
+				</p>
+				<p class="person">
+					Juan Diego López
+				</p> 
+				<p class="task">
+					Tecnologías utilizadas
+				</p>
+				<p class="person">
+					<a href="http://d3js.org/" target="_blank">D3.js</a> + <a href="https://github.com/mbostock/queue" target="_blank">Queue</a> | 
+					<a href="http://ivaynberg.github.io/select2/" target="_blank">Select2</a> |
+					<a href="http://handlebarsjs.com/" target="_blank">Handlebars</a> |
+					<a href="http://jquery.com/" target="_blank">jQuery</a> + <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">easing</a> |
+					<a href="http://www.shadowbox-js.com/" target="_blank">Shadowbox</a> |
+					<a href="http://gruntjs.com/" target="_blank">Grunt.js</a>
+				</p>
+			</div>
+		</div>
+
+		<script id="politico-item" type="text/x-handlebars-template">
+			{{#each this}}
+				<div id="ficha-{{id}}" class="ficha" data-tooltip="{{nombre}}" data-id="{{id}}">
+					<div class="check"></div>
+					<div class="selection"></div>
+					<img src="data/candidatos/gris/{{foto}}">
+				</div>
+			{{/each}}
+		</script>
+
+		<script id="politico-select-list" type="text/x-handlebars-template">
+			<select id="select-politicos" multiple="multiple">
+				{{#each this}}
+					<option value="{{id}}">{{nombre}}</option>
+				{{/each}}
+			</select>
+		</script>
+
+		<script type="text/javascript">
+			var BUILD = '';
+		</script>
+
+		<script type="text/javascript" src="js/libs/d3.min.js"></script>
+		<script type="text/javascript" src="js/libs/queue.v1.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/libs/shadowbox.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/libs/select2.min.js"></script>
+		<script type="text/javascript" src="js/libs/select2_locale_es.js"></script>
+		<script type="text/javascript" src="js/libs/handlebars.js"></script>
+		<script type="text/javascript" src="js/libs/minishare.js"></script>
+		<script type="text/javascript" src="js/d3.politicos.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
