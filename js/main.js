@@ -107,7 +107,7 @@ var App;
         Shadowbox.open({
             content:    '#creditos-modal',
             player:     "inline",
-            height:     378,
+            height:     432,
             width:      500
         });
     }
